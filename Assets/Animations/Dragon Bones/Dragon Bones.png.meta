@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 03a38930cd2ae454cbae4d104d0200d2
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dragon Bones_0
+    21300002: Dragon Bones_1
+    21300004: Dragon Bones_2
+    21300006: Dragon Bones_3
+    21300008: Dragon Bones_4
+    21300010: Dragon Bones_5
+    21300012: Dragon Bones_6
+    21300014: Dragon Bones_7
+    21300016: Dragon Bones_8
+    21300018: Dragon Bones_9
+    21300020: Dragon Bones_10
+    21300022: Dragon Bones_11
+    21300024: Dragon Bones_12
+    21300026: Dragon Bones_13
+    21300028: Dragon Bones_14
+    21300030: Dragon Bones_15
+    21300032: Dragon Bones_16
+    21300034: Dragon Bones_17
+    21300036: Dragon Bones_18
+    21300038: Dragon Bones_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Dragon Bones_0
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 423
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 421
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_2
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 346
+        width: 160
+        height: 178
+      alignment: 9
+      pivot: {x: .641451836, y: .204467431}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_3
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 335
+        width: 62
+        height: 141
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 370
+        width: 60
+        height: 18
+      alignment: 9
+      pivot: {x: .920930505, y: .781132996}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_5
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 368
+        width: 69
+        height: 18
+      alignment: 9
+      pivot: {x: .0497051738, y: .544235229}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 307
+        width: 53
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_7
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 280
+        width: 105
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_8
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 247
+        width: 49
+        height: 39
+      alignment: 9
+      pivot: {x: .837380052, y: .221445724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_9
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 220
+        width: 56
+        height: 43
+      alignment: 9
+      pivot: {x: .761469424, y: .598860621}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_10
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 133
+        width: 118
+        height: 174
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_11
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 230
+        width: 81
+        height: 47
+      alignment: 9
+      pivot: {x: .1326309, y: .399503678}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_12
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 238
+        width: 23
+        height: 39
+      alignment: 9
+      pivot: {x: .582145333, y: .766443491}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_13
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 227
+        width: 50
+        height: 29
+      alignment: 9
+      pivot: {x: .556680322, y: .760597467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_14
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 176
+        width: 56
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_15
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 206
+        width: 25
+        height: 40
+      alignment: 9
+      pivot: {x: .632252812, y: .216600806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_16
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 138
+        width: 91
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_17
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 64
+        width: 102
+        height: 90
+      alignment: 9
+      pivot: {x: .851933777, y: .578722239}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_18
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 23
+        width: 101
+        height: 113
+      alignment: 9
+      pivot: {x: .42985186, y: .897093534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dragon Bones_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 321
+        width: 73
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
