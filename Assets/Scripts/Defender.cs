@@ -13,7 +13,6 @@ public class Defender : MonoBehaviour
 
 	public void AddStars(int amount)
 	{
-		starDisplay.AddStars(amount);
-		print ("stars: " + amount);
+		starDisplay.AddStars(amount);		
 	}	
 }

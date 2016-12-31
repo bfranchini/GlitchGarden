@@ -45,7 +45,15 @@ public class Shooter : MonoBehaviour
 	//look through all spawners, and set mylaneSpawner if found
 	void setMyLaneSpawner()
 	{
-		Spawner[] spawnerArray = GameObject.FindObjectsOfType<Spawner>();
+	    var spawnerParent = GameObject.FindGameObjectWithTag("EnemySpawners");
+
+	    if (!spawnerParent)
+	    {
+	        Debug.LogError("EnemySpawners parent object missing!");
+	        return;
+	    }
+
+	    Spawner[] spawnerArray = spawnerParent.GetComponentsInChildren<Spawner>();
 		
 		foreach(Spawner spawner in spawnerArray)
 		{
