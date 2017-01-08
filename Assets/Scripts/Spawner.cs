@@ -24,7 +24,12 @@ public class Spawner : MonoBehaviour
     {
         var newGameObj = Instantiate(myGameObject, transform) as GameObject;
         newGameObj.transform.position = transform.position;
-        //	Debug.Log ("Spawned " + newAttacker.name);
+
+        //if we're spawning a star then make it spin.       
+        if (newGameObj.GetComponent<Star>())
+        {
+            newGameObj.GetComponent<Animator>().SetBool("IsSpinning", true);
+        }            
     }
 
     bool isTimeToSpawn(GameObject myGameObject)

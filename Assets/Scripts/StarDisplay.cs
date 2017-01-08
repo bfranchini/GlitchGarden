@@ -7,7 +7,7 @@ public class StarDisplay : MonoBehaviour {
 
 	public enum Status{SUCCESS, FAILURE};
 	private Text displayText;
-    private int totalStars = 50;	
+    private int totalStars = 999;	
 	
 	// Use this for initialization
 	void Start () 
