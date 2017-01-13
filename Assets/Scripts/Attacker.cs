@@ -7,14 +7,16 @@ public class Attacker : MonoBehaviour {
 	private float currentSpeed;
     private AudioSource audioSource;
     private GameObject currentTarget;
-	Animator animator; 
+	private Animator animator;
+    private ParticleSystem particleSystem;
 
 	// Use this for initialization
 	void Start () 
 	{		
 		animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-    }
+	    particleSystem = GetComponentInChildren<ParticleSystem>();
+	}
 	
 	// Update is called once per frame
 	void Update () 
@@ -41,9 +43,12 @@ public class Attacker : MonoBehaviour {
 			var health = currentTarget.GetComponent<Health>();
 			
 			if(health)
-			{
-				health.DealDamage(damage);
-			}			
+			    health.DealDamage(damage);
+
+		    if (particleSystem && !particleSystem.isEmitting)
+		    {
+                particleSystem.Play();
+            }              
 		}
 	}
 	
