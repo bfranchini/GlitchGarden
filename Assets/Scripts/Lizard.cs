@@ -5,14 +5,12 @@ public class Lizard : MonoBehaviour {
 
 	private Attacker attacker;
 	private Animator animator;
-    private AudioSource audioSource;
 	
 	// Use this for initialization
 	void Start () 
 	{
 		attacker = GetComponent<Attacker>();
-		animator = GetComponent<Animator>();
-	    audioSource = GetComponent<AudioSource>();
+		animator = GetComponent<Animator>();	    
 	}
 	
 	void OnTriggerEnter2D(Collider2D coll)
@@ -31,9 +29,4 @@ public class Lizard : MonoBehaviour {
 			attacker.Attack(obj);
 		}
 	}
-
-    public void PlayChewingSound()
-    {
-        audioSource.Play();
-    }
 }

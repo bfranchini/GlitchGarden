@@ -5,15 +5,16 @@ using System.Collections;
 public class Attacker : MonoBehaviour {
 	
 	private float currentSpeed;
-
-	private GameObject currentTarget;
+    private AudioSource audioSource;
+    private GameObject currentTarget;
 	Animator animator; 
 
 	// Use this for initialization
 	void Start () 
 	{		
-		animator = GetComponent<Animator>();	
-	}
+		animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () 
@@ -50,5 +51,10 @@ public class Attacker : MonoBehaviour {
 	{
 		currentTarget = obj;	
 	}
+
+    public void PlayChewingSound()
+    {
+        audioSource.Play();
+    }
 }
 
