@@ -22,7 +22,7 @@ public class DefenderSpawner : MonoBehaviour
 			parent = new GameObject("Defenders");
 		}
 		
-		starDisplay = GameObject.FindObjectOfType<StarDisplay>();
+		starDisplay = FindObjectOfType<StarDisplay>();
 	}
 	
 	void OnMouseDown()
@@ -32,9 +32,9 @@ public class DefenderSpawner : MonoBehaviour
 		GameObject defender = Button.SelectedDefender;
 
         if (defender)
-        {
+        {                        
             var defCost = defender.GetComponent<Defender>().StarCost;
-
+            
             if (starDisplay.UseStars(defCost) == StarDisplay.Status.SUCCESS)
                 SpawnDefender(roundedPos, defender);
             else
@@ -46,8 +46,10 @@ public class DefenderSpawner : MonoBehaviour
 	{
 		Quaternion zeroRot = Quaternion.identity;
 		GameObject newDef = Instantiate (defender, roundedPos, zeroRot) as GameObject;
+	    
 		newDef.transform.parent = parent.transform;
-	}
+        Button.SelectedDefender = null;
+    }
 	
 	Vector2 SnapToGrid(Vector2 rawWorldPos)
 	{
