@@ -64,8 +64,6 @@ public class Button : MonoBehaviour
         
         isActive = true;
         GetComponent<SpriteRenderer>().color = Color.white;        
-
-        Debug.Log(string.Format("{0} is now clickable", name));
     }
 
     private bool IsButtonReady()

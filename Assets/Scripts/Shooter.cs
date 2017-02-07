@@ -24,10 +24,7 @@ public class Shooter : MonoBehaviour
 	
 	void Update()
 	{
-		if(isAttakerAheadInLane())
-			animator.SetBool("IsAttacking", true);
-		else
-			animator.SetBool("IsAttacking", false);			
+	    animator.SetBool("IsAttacking", isAttakerAheadInLane());
 	}
 	
 	bool isAttakerAheadInLane()
@@ -70,7 +67,7 @@ public class Shooter : MonoBehaviour
 	
 	private void Fire()
 	{
-		GameObject newProjectile = Instantiate(Projectile) as GameObject;
+		GameObject newProjectile = Instantiate(Projectile);
 		newProjectile.transform.parent = projectileParent.transform;
 		newProjectile.transform.position = gun.transform.position;
 		
