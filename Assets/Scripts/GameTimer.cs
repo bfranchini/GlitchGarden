@@ -10,28 +10,22 @@ public class GameTimer : MonoBehaviour {
 	private LevelManager levelManager;
 	private bool isEndOfLevel = false;
 	private GameObject winMessage;
+    private MusicManager musicManager;
 
 	// Use this for initialization
-	void Start () {
-	//	timeRemaining = LevelSeconds;
+	void Start ()
+    {	
 		slider = GetComponent<Slider>();
 		levelManager = FindObjectOfType<LevelManager>();
 		audioSource = GetComponent<AudioSource>();
+        musicManager = FindObjectOfType<MusicManager>();
 		findYouWin();
-		winMessage.SetActive(false);
-		//InvokeRepeating("UpdateTimer", .1f, 1f);
+		winMessage.SetActive(false);	        	
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		/*if(timeRemaining <= 0)
-		{
-			CancelInvoke("UpdateTimer");
-			//play sound
-			AudioSource.PlayClipAtPoint(LevelEnd, gameObject.transform.position);
-			
-			levelManager.LoadNextLevel();			
-		}	*/	
+	void Update ()
+    {
 		//time will progressively get closer to 1 which is slider max value
 		slider.value = Time.timeSinceLevelLoad / LevelSeconds;
 		
@@ -43,6 +37,7 @@ public class GameTimer : MonoBehaviour {
 
 	void HandleWinCondition ()
 	{
+        musicManager.StopMusic();
 		audioSource.Play ();
 		Invoke ("loadNextLevel", audioSource.clip.length);
 		winMessage.SetActive (true);
@@ -62,6 +57,7 @@ public class GameTimer : MonoBehaviour {
 	
 	private void loadNextLevel()
 	{
+        musicManager.PlayMusic();
 		levelManager.LoadNextLevel();
 	}	
 	

@@ -56,4 +56,14 @@ public class MusicManager : MonoBehaviour {
 	{
 		audioSource.volume = volume;
 	}
+
+    public void StopMusic()
+    {
+        audioSource.Stop();
+    }
+
+    public void PlayMusic()
+    {
+        audioSource.Play();
+    }
 }
