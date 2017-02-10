@@ -4,6 +4,7 @@ using System.Collections;
 public class Projectile : MonoBehaviour {
 
 	public float Speed, Damage;
+    public AudioClip audioClip;
 
 	// Use this for initialization
 	void Start () {	
@@ -20,8 +21,8 @@ public class Projectile : MonoBehaviour {
 	{
 		
 			//get the gameObject of the collider we just hit
-			var obj = collider.gameObject;
-			
+			var obj = collider.gameObject;		
+
 			//get the health and attacker components of the game object we just grabbed
 			var attackerHealth = obj.GetComponent<Health>();
 			var attacker = obj.GetComponent<Attacker>();
@@ -29,11 +30,20 @@ public class Projectile : MonoBehaviour {
 			//deal damage only if we hit an attacker																
 			if(attacker && attackerHealth)
 			{
-				attackerHealth.DealDamage(Damage);			
-
+			    PlaySoundEffect();
+                attackerHealth.DealDamage(Damage);			
 				Destroy(gameObject);
-									
-				return;
 			}					
 	}
+
+    private void PlaySoundEffect()
+    {
+        if (audioClip == null)
+        {
+            Debug.LogError("Audio clip on " + name + " is null!");
+            return;            
+        }            
+
+        AudioSource.PlayClipAtPoint(audioClip, transform.position);
+    }
 }
