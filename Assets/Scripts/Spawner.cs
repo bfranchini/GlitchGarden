@@ -41,8 +41,7 @@ public class Spawner : MonoBehaviour
 
     bool isTimeToSpawn(GameObject myGameObject)
     {
-        var attackerCount = GameObject.FindObjectsOfType<Attacker>().Length;
-        Debug.Log("Current attacker count: " + attackerCount);
+        var attackerCount = GameObject.FindObjectsOfType<Attacker>().Length;        
 
         //Throttle the number of enemies so we don't overwhelm the player.
         if (attackerCount >= MaxEnemiesOnFiled)

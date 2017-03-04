@@ -17,6 +17,9 @@ public class OptionsController : MonoBehaviour
 		volumeSlider.value = PlayerPrefsManager.GetMasterVolume();
 		
 		difficultySlider.value = PlayerPrefsManager.GetDifficulty();
+
+        if(volumeSlider.value == 0f)
+            SetDefaults();
 	}
 	
 	// Update is called once per frame

@@ -37,7 +37,9 @@ public class GameTimer : MonoBehaviour {
 
 	void HandleWinCondition ()
 	{
-        musicManager.StopMusic();
+        if(musicManager != null)
+            musicManager.StopMusic();
+
 		audioSource.Play ();
 		Invoke ("loadNextLevel", audioSource.clip.length);
 		winMessage.SetActive (true);
@@ -57,7 +59,9 @@ public class GameTimer : MonoBehaviour {
 	
 	private void loadNextLevel()
 	{
-        musicManager.PlayMusic();
+        if(musicManager != null)
+            musicManager.PlayMusic();
+
 		levelManager.LoadNextLevel();
 	}	
 	
