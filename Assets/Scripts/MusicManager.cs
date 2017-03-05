@@ -45,7 +45,9 @@ public class MusicManager : MonoBehaviour {
 		
 		if(thisLevelMusic)
 		{					
+            if(PlayerPrefsManager.HasVoumePref())
 			audioSource.volume = PlayerPrefsManager.GetMasterVolume();	
+
 			audioSource.clip = thisLevelMusic;
 			audioSource.loop = true;
 			audioSource.Play();
